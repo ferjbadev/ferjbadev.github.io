@@ -19,7 +19,7 @@ export default function Navbar() {
                         {/* Ícono de Inicio al lado del nombre del portafolio */}
                         <FaHome className="text-white text-2xl" />
                         <Link href="/">
-                            <span className="text-3xl font-bold text-white hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300">
+                            <span className="text-3xl font-bold text-white hover:bg-gray-700 px-3 py-2 rounded-md transition duration-300 hover:scale-105">
                                 My Portfolio
                             </span>
                         </Link>
@@ -29,19 +29,19 @@ export default function Navbar() {
                     <nav className="hidden md:flex space-x-8">
                         {/* Enlace a 'Projects' con ícono y texto */}
                         <Link href="#projects">
-                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300">
+                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300 hover:scale-105">
                                 <FaBriefcase className="mr-2" /> Projects
                             </span>
                         </Link>
                         {/* Enlace a 'Skills' con ícono y texto */}
                         <Link href="#skills">
-                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300">
+                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300 hover:scale-105">
                                 <FaTools className="mr-2" /> Skills
                             </span>
                         </Link>
                         {/* Enlace a 'Contact' con ícono y texto */}
                         <Link href="#contact">
-                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300">
+                            <span className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-2xl font-medium transition duration-300 hover:scale-105">
                                 <FaEnvelope className="mr-2" /> Contact
                             </span>
                         </Link>
