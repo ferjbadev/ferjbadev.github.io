@@ -72,10 +72,10 @@ export default function Projects() {
 
     // Renderizado de la lista de proyectos 
     return (
-        <section id="projects" className="bg-gray-900 py-20">
+        <section id="projects" className="bg-gray-900 py-5">
             <div className="container mx-auto px-4">
                 {/* Título y subtítulo de la sección */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-2">
                     <h2 className="text-4xl font-bold text-white mb-4">My GitHub Projects</h2>
                     <p className="text-xl text-gray-400">Check out some of my recent work</p>
                 </div>
@@ -94,7 +94,7 @@ export default function Projects() {
                                 <h3 className="text-xl font-semibold text-white mb-2">{repo.name}</h3>
                                 {/* Descripción del repositorio, se muestra texto alternativo si no hay descripción */}
                                 <p className="text-gray-400 mb-4 h-20 overflow-hidden">
-                                    {repo.description || "No description available"}
+                                    {repo.description || "Without Description"}
                                 </p>
                                 {/* Lenguaje y número de estrellas */}
                                 <div className="flex justify-between items-center">

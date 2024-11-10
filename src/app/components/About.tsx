@@ -5,7 +5,7 @@ import { FaEnvelope, FaProjectDiagram } from 'react-icons/fa'
 const About = () => {
     return (
         // Sección principal del componente
-        <section id="about" className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20">
+        <section id="about" className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-10">
             {/* Contenedor centrado horizontalmente con espaciado en los lados */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Contenedor para organizar el contenido en columnas para pantallas grandes */}
