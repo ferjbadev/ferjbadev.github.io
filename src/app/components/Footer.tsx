@@ -32,7 +32,8 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-gray-700">
+                {/* Seprador */}
+                <div className="mt-4 pt-4 border-t border-white">
                     <p className="text-white">
                         © {currentYear} Fernando Barrera. All rights reserved.
                     </p>

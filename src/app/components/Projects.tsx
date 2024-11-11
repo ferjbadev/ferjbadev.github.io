@@ -72,7 +72,7 @@ export default function Projects() {
 
     // Renderizado de la lista de proyectos 
     return (
-        <section id="projects" className="bg-gray-900 py-5">
+        <section id="projects" className="bg-gradient-to-b from-gray-800 via-gray-800 to-gray-700 py-5">
             <div className="container mx-auto px-4">
                 {/* Título y subtítulo de la sección */}
                 <div className="text-center mb-2">
@@ -86,7 +86,7 @@ export default function Projects() {
                         <a
                             href={repo.html_url} // Enlace al repositorio en GitHub
                             key={repo.id}
-                            className="block bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                            className="block bg-gray-800 border border-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
