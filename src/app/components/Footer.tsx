@@ -1,13 +1,10 @@
 import React from 'react'
-import { FaTwitter, FaYoutube, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
 
     const socialLinks = [
-        { name: 'Twitter', icon: FaTwitter, url: 'https://twitter.com/', color: 'text-blue-400 hover:text-blue-300 hover:scale-150' },
-        { name: 'YouTube', icon: FaYoutube, url: 'https://youtube.com/', color: 'text-red-500 hover:text-red-400 hover:scale-150' },
-        { name: 'Facebook', icon: FaFacebook, url: 'https://facebook.com/barrerafernando54', color: 'text-blue-600 hover:text-blue-500 hover:scale-150' },
         { name: 'LinkedIn', icon: FaLinkedin, url: 'https://linkedin.com/in/fernandobarreraa', color: 'text-blue-700 hover:text-blue-600 hover:scale-150' },
         { name: 'GitHub', icon: FaGithub, url: 'https://github.com/ferjbadev', color: 'text-gray-400 hover:text-gray-300 hover:scale-150' },
     ]
