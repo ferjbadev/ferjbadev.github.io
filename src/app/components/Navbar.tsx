@@ -3,18 +3,24 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { FaHome, FaBriefcase, FaTools, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+
 
 // Componente principal del Navbar
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const socialLinks = [
+        { name: 'LinkedIn', icon: FaLinkedin, url: 'https://linkedin.com/in/fernandobarreraa', color: 'text-blue-700 hover:text-blue-600 hover:scale-150' },
+        { name: 'GitHub', icon: FaGithub, url: 'https://github.com/ferjbadev', color: 'text-white hover:text-gray-300 hover:scale-150' },
+    ]
+
     return (
         // Encabezado con fondo oscuro y sombra
-        <header className="bg-gray-800 shadow-md">
+        <header className="bg-gray-800 shadow-xl">
             {/* Contenedor principal, centrado y con un límite de ancho */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
-
+            <div className="max-w-screen-2xl mx-auto sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center py-2">
                     <div className="flex items-center space-x-2">
                         {/* Ícono de Inicio al lado del nombre del portafolio */}
                         <FaHome className="text-white text-2xl" />
@@ -45,6 +51,25 @@ export default function Navbar() {
                                 <FaEnvelope className="mr-2" /> Contact
                             </span>
                         </Link>
+
+                        {/* Redes sociales */}
+                        <div className=" flex items-center justify-between p-3 rounded-lg shadow-md space-x-3 border border-white">
+                            <h3 className="text-2xl font-bold text-white">Follow Me</h3>
+                            <div className="flex space-x-2">
+                                {socialLinks.map((link) => (
+                                    <a
+                                        key={link.name}
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`${link.color} transition duration-300 ease-in-out transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
+                                        aria-label={`Follow me on ${link.name}`}
+                                    >
+                                        <link.icon className="w-8 h-8" />
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </nav>
 
                     {/* Botón para abrir/cerrar el menú móvil */}
